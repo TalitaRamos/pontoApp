@@ -54,26 +54,27 @@ class _InitPageState extends State<InitPage> {
           ),
           body: _children[_currentIndex],
           bottomNavigationBar: BottomNavigationBar(
-        onTap: onTabTapped,
-        currentIndex: _currentIndex,
-        backgroundColor: Colors.grey.shade200,
-        selectedItemColor: Colors.lightGreen,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.dashboard),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.receipt_long_rounded),
-            label: 'Relatório',
-          ),
-          BottomNavigationBarItem(
+            onTap: onTabTapped,
+            currentIndex: _currentIndex,
+            backgroundColor: Colors.grey.shade200,
+            selectedItemColor: Colors.lightGreen,
+            items: const <BottomNavigationBarItem>[
+              BottomNavigationBarItem(
+                icon: Icon(Icons.dashboard),
+                label: 'Home',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.receipt_long_rounded),
+                label: 'Relatório',
+              ),
+              BottomNavigationBarItem(
             icon: Icon(Icons.settings),
             label: 'Configurações',
           ),
-        ],
-      ),
-    ));
+            ],
+          ),
+       )
+    );
   }
 
   void onTabTapped(int index) {
